@@ -4,9 +4,9 @@
 * [General Info](#general-info)
 * [Instructions](#instruction)
 
-##General Info
+## General Info
 This project contatins a simple ATM controller.
-####atm.py
+#### atm.py
 atm.py contains all atm functions.
 
 **ConnectToBankSystem**
@@ -39,7 +39,7 @@ This function withdraws the certain amount of money from Saving account.
 **EraseCurrentAccountInformation**
 This function is used to remove the information of Account in ATM.
 
-####mock_bank_system.py
+#### mock_bank_system.py
 This file contains mock bank system which has two accounts and simple functions
 **CheckPin** - return TRUE if given Pin Matches account PIN, else return FALSE
 **GetCheckBalance** - return Check account balance
@@ -52,29 +52,29 @@ This file contains mock bank system which has two accounts and simple functions
 
 And each atm.py's function is tested in the main().
 Tests include:
-**TEST_AtmShouldCheckIfPinIsValid**
-**TEST_AtmShouldNotAllowAccessIfNotAuthenticated**
-**TEST_AtmShouldBeAbleToGetCheckBalance**
-**TEST_AtmShouldBeAbleToGetSavingBalance**
-**TEST_AtmShouldBeAbleToDepositToCheck**
-**TEST_AtmShouldBeAbleToDepositToSaving**
-**TEST_AtmShouldNotAllowDepositToCheckOverDepositLimit**
-**TEST_AtmShouldNotAllowDepositToSavingOverDepositLimit**
-**TEST_AtmShouldBeAbleToWithdrawalFromCheck**
-**TEST_AtmShouldBeAbleToWithdrawalFromSaving**
-**TEST_AtmShouldNotAllowWithdrawalFromCheckOverDepositLimit**
-**TEST_AtmShouldNotAllowWithdrawalFromSavingOverDepositLimit**
-**TEST_AtmShouldNotAllowWithdrawalFromSavingOverSavingBalance**
-**TEST_AtmShouldAllowTransferAnotherAccount**
-**TEST_AtmShouldNotAllowTransferAnotherAccountOverTransferLimit**
+-TEST_AtmShouldCheckIfPinIsValid
+-TEST_AtmShouldNotAllowAccessIfNotAuthenticated
+-TEST_AtmShouldBeAbleToGetCheckBalance
+-TEST_AtmShouldBeAbleToGetSavingBalance
+-TEST_AtmShouldBeAbleToDepositToCheck
+-TEST_AtmShouldBeAbleToDepositToSaving
+-TEST_AtmShouldNotAllowDepositToCheckOverDepositLimit
+-TEST_AtmShouldNotAllowDepositToSavingOverDepositLimit
+-TEST_AtmShouldBeAbleToWithdrawalFromCheck
+-TEST_AtmShouldBeAbleToWithdrawalFromSaving
+-TEST_AtmShouldNotAllowWithdrawalFromCheckOverDepositLimit
+-TEST_AtmShouldNotAllowWithdrawalFromSavingOverDepositLimit
+-TEST_AtmShouldNotAllowWithdrawalFromSavingOverSavingBalance
+-TEST_AtmShouldAllowTransferAnotherAccount
+-TEST_AtmShouldNotAllowTransferAnotherAccountOverTransferLimit
 
-##Setup
+## Setup
 To run this program, the code has to be downloaded to the designated directory.
 1. Clone the project.
-'''
+```
 git clone https://github.com/ruadms00/atm-machine.git
-'''
+```
 2. Run 'mock_bank_system.py'.
-'''
+```
 python atm-machine/mock_bank_system.py 
-'''
+```
