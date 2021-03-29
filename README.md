@@ -7,40 +7,40 @@
 ## General Info
 This project contatins a simple ATM controller.
 ### atm.py
-atm.py contains all atm functions.
+atm.py contains all atm functions. <br />
 
-**ConnectToBankSystem**
-This function is used to check if the ATM is connected to a bank system.
-**CardInserted**
-This function set the account number if the card is inserted.
-**AuthenticateAccountAndPin**
-This function checks if the entered PIN matches to account's PIN
-**GetCheckBalance**
-This function returns current balance in Check account.
-**GetSavingBalance**
-This function returns current balance in Saving account.
-**DepositToCheck**
-This function puts deposit to Check account.
-**DepositToSaving**
-This function puts deposit to Saving account.
-**WithdrawalFromCheck**
-This function withdraws the certain amount of money from Check account.
-**WithdrawalFromSaving**
-This function withdraws the certain amount of money from Saving account.
-**EraseCurrentAccountInformation**
-This function is used to remove the information of Account in ATM.
-### mock_bank_system.py
-This file contains mock bank system which has two accounts and simple functions
-**CheckPin** - return TRUE if given Pin Matches account PIN, else return FALSE
-**GetCheckBalance** - return Check account balance
-**GetSavingBalance** - return Saving account balance
-**DepositToCheck** - add deposit the Check account
-**DepositToSaving** - add deposit the Saving account
-**WithdrawalFromCheck** - withdraw from Check balance
-**WithdrawalFromSaving** - withdraw from Saving balance
-**TransferToAnotherAccount** - Transfer money to another's Check account
+- **ConnectToBankSystem** <br />
+This function is used to check if the ATM is connected to a bank system. <br />
+- **CardInserted** <br />
+This function set the account number if the card is inserted. <br />
+- **AuthenticateAccountAndPin** <br />
+This function checks if the entered PIN matches to account's PIN <br />
+- **GetCheckBalance** <br />
+This function returns current balance in Check account. <br />
+- **GetSavingBalance** <br />
+This function returns current balance in Saving account. <br />
+- **DepositToCheck** <br />
+This function puts deposit to Check account. <br />
+- **DepositToSaving** <br />
+This function puts deposit to Saving account. <br />
+- **WithdrawalFromCheck** <br />
+This function withdraws the certain amount of money from Check account. <br />
+- **WithdrawalFromSaving** <br />
+This function withdraws the certain amount of money from Saving account. <br />
+- **EraseCurrentAccountInformation** <br />
+This function is used to remove the information of Account in ATM. <br />
+### mock_bank_system.py <br />
+This file contains mock bank system which has two accounts and simple functions <br />
+- **CheckPin** - return TRUE if given Pin Matches account PIN, else return FALSE <br />
+- **GetCheckBalance** - return Check account balance <br />
+- **GetSavingBalance** - return Saving account balance <br />
+- **DepositToCheck** - add deposit the Check account <br />
+- **DepositToSaving** - add deposit the Saving account <br />
+- **WithdrawalFromCheck** - withdraw from Check balance <br />
+- **WithdrawalFromSaving** - withdraw from Saving balance <br />
+- **TransferToAnotherAccount** - Transfer money to another's Check account <br />
 
-And each atm.py's function is tested in the main().
+And each atm.py's function is tested in the main(). <br />
 Tests include:
 - TEST_AtmShouldCheckIfPinIsValid <br />
 - TEST_AtmShouldNotAllowAccessIfNotAuthenticated <br />
