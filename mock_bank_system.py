@@ -1,4 +1,4 @@
-from ex_atm import ATM
+from atm import ATM
 
 class MockBankSystem():
     def __init__(self):
