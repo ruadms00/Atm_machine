@@ -52,7 +52,7 @@ This file contains mock bank system which has two accounts and simple functions
 
 And each atm.py's function is tested in the main().
 Tests include:
--TEST_AtmShouldCheckIfPinIsValid
+-TEST_AtmShouldCheckIfPinIsValid\n
 -TEST_AtmShouldNotAllowAccessIfNotAuthenticated
 -TEST_AtmShouldBeAbleToGetCheckBalance
 -TEST_AtmShouldBeAbleToGetSavingBalance
